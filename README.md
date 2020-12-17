@@ -4,7 +4,9 @@
 2) cd into project
 3) set up src folder components and js files
 4) link bootstrap in public/index.html 
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"/>
+
 5) npm install react-bootstrap bootstrap    
 6) npm install axios
 7) npm install react-router-dom
