@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# React Setup
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1) npx create-react-app
+2) cd into project
+3) set up src folder components and js files
+4) link bootstrap in public/index.html 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"/>
+5) npm install react-bootstrap bootstrap    
+6) npm install axios
+7) npm install react-router-dom
 
-## Available Scripts
+In this activity we will practice using the useContext Hook in React by creating a global state for our articles.
 
-In the project directory, you can run:
+  # Instructions
 
-### `yarn start`
+  * Replace your React application's src folder with [Unsolved/src](Unsolved/src).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  * Start the application in dev mode by running `npm start` in your terminal.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+  * Open your browser to [localhost:3000](http://localhost:3000) and study the rendered application.
 
-### `yarn test`
+  * Update this application to accomplish the following:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  * Combine all of the `useState` Hooks that are relevant to the information retrieved from the Wikipedia article into a single `useState` Hook.
 
-### `yarn build`
+  * Create a Context Object that will be used to store the state of the article called `ArticleContext`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  * Wrap the components that will need access to the Context Object with a Context Provider.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  * Update the `SearchResults` component with the `useContext` Hook to to eliminate the need for props.
